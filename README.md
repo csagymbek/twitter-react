@@ -11,3 +11,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 1. React Flip Move ``
 2. Material UI Icons `npm i material-ui/icons`
+3. React Twitter Embed Component `npm i react-twitter-embed`
