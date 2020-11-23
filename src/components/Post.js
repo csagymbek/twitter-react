@@ -18,26 +18,24 @@ export default function Post({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://pbs.twimg.com/profile_images/1315307357077794817/ErPAUz9m_400x400.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Christopher Johnson
+              {displayName}
               <span className="post__headerSpecial">
-                <VerifiedUser className="post__badge" />
+                {verified && <VerifiedUser className="post__badge" />}
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>Not lost, just locationally challenged!</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1587467238523-2ef1534d7ebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
